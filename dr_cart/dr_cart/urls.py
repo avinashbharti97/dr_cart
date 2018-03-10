@@ -16,11 +16,13 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from main import views as main_views
+from contact import views as contact_views
 admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', main_views.index, name='home'),
-    url(r'^pages/', include('django.contrib.flatpages.urls'))
+    url(r'^pages/', include('django.contrib.flatpages.urls')),
+    url(r'^contact/', contact_views.contact, name='contact'),
 
 ]
