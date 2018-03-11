@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from payments.models import User
 
 def index(request):
 	uid = request.session.get('user')
