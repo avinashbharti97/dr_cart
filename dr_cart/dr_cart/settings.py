@@ -107,7 +107,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+STRIPE_SECRET   =   'sk_test_kUTLurrtV8fCpwH1xlMH9XtC'
+STRIPE_PUBLISHABLE  =   'pk_test_wNRV3FjanbHYiyrwnTzIQo1g'
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
